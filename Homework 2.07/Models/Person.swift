@@ -10,6 +10,7 @@ struct Person {
     let surname: String
     let phone: String
     let email: String
+    let test =  "Test"
     
     var fullname: String {
         "\(surname) \(name)"
@@ -25,7 +26,10 @@ struct Person {
         let emails = dataManager.email.shuffled()
         
         for index in 0..<names.count {
-            persons.append(Person(name: names[index], surname: surnames[index], phone: phones[index], email: emails[index]))
+            persons.append(Person(name: names[index],
+                                  surname: surnames[index],
+                                  phone: phones[index],
+                                  email: emails[index]))
         }
         
         return persons
